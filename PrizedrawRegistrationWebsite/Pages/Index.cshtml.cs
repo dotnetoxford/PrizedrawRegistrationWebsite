@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using PrizedrawRegistrationWebsite.Models;
 
 namespace PrizedrawRegistrationWebsite.Pages;
 
@@ -14,5 +14,10 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
+    }
+
+    public void OnPostSubmit(UserDetails person)
+    {
+        Console.WriteLine($"Name: {person.FullName}, Email: {person.EmailAddress}");
     }
 }
