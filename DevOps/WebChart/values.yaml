@@ -1,0 +1,8 @@
+hostname: prizedraw-reg.dotnetoxford.com
+healthChecks:
+  enabled: false
+  readinessRoute: TODO
+useAcrSecret: false
+image:
+  name: prizedraw-registration-website
+  tag: 0
