@@ -1,7 +1,11 @@
+using PrizedrawRegistrationWebsite;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.Configure<Config>(builder.Configuration);
 
 var app = builder.Build();
 
